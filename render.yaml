@@ -4,8 +4,8 @@ services:
     name: frontend-service
     env: node
     plan: free
-    buildCommand: cd frontend && npm install
-    startCommand: cd frontend && npm run dev
+    buildCommand: cd Frontend && npm install
+    startCommand: cd Frontend && npm run dev
     branch: main
     envVars:
       - key: NODE_ENV
@@ -16,8 +16,8 @@ services:
     name: backend-service
     env: node
     plan: free
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && nodemon server.js
+    buildCommand: cd Backend && npm install
+    startCommand: cd Backend && nodemon server.js
     branch: main
     envVars:
       - key: NODE_ENV
